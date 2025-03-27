@@ -1,8 +1,15 @@
+
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
 }
 
 .logo {
@@ -39,4 +46,19 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 640px) {
+  .section-padding {
+    @apply py-10 px-4;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+  }
 }
